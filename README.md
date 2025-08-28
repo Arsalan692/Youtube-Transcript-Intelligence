@@ -55,7 +55,7 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key_here
 
 ### 5️⃣ Run the app
 ```bash
-streamlit run app.py
+streamlit run Youtube_transcript_project.py
 ```
 
 
