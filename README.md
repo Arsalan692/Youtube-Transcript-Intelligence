@@ -54,7 +54,6 @@ pip install -r requirements.txt
    - Go to https://huggingface.co/settings/tokens
    - Create a token with read access
     
----
 ### 5️⃣ Add API Keys
 **Create a .env file in the project root and add your keys:**
 ```bash
