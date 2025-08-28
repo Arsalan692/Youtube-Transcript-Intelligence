@@ -43,7 +43,19 @@ venv\Scripts\activate      # On Windows
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Add API Keys
+### 4️⃣ Set up API keys
+   
+   **🔑 Get a Perplexity API Key:**
+   - Go to https://docs.perplexity.ai
+   -  Sign in or create an account
+   -  Generate a new API key from the dashboard
+
+   **🔑 Get a HuggingFace API Token:**
+   - Go to https://huggingface.co/settings/tokens
+   - Create a token with read access
+    
+---
+### 5️⃣ Add API Keys
 **Create a .env file in the project root and add your keys:**
 ```bash
 # Perplexity API Key
@@ -53,7 +65,7 @@ PERPLEXITY_API_KEY=your_perplexity_api_key_here
 HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key_here
 ```
 
-### 5️⃣ Run the app
+### 6️⃣ Run the app
 ```bash
 streamlit run Youtube_transcript_project.py
 ```
