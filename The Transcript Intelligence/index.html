@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Transcript Intelligence</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+      background-color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: white;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #e60000;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(#1c1c1c, #0d0d0d);
+      position: relative;
+    }
+
+    .logo {
+      width: 180px;
+      height: 130px;
+      position: relative;
+      animation: pulse 3s infinite;
+    }
+
+    .logo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff0000;
+      border-radius: 25% / 50%;
+      z-index: 1;
+    }
+
+    .logo::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 70px;
+      width: 40px;
+      height: 50px;
+      background: white;
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+      z-index: 2;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .right {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>The Transcript Intelligence</h1>
+      <p>Ask questions about any YouTube video (with English captions).</p>
+      <input type="text" placeholder="Enter YouTube Video URL" />
+      <textarea rows="4" placeholder="Ask your question about the video"></textarea>
+      <button>Get Answer</button>
+    </div>
+    <div class="right">
+      <div class="logo"></div>
+    </div>
+  </div>
+</body>
+</html>
