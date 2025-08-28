@@ -68,6 +68,11 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key_here
 ```bash
 streamlit run Youtube_transcript_project.py
 ```
+---
+
+## 📽️ Watch Project Demo
+**[▶️ Watch Demo Video (Google Drive)](https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing)**
+
 
 
 
